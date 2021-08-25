@@ -10,7 +10,6 @@ while condition:
         Correct=[]
         wrong_pos=0
         num=str(randint(1000,9999))
-        print(num)
         guess=input("Guess a 4 Digit Number:")
         if num==guess:
             score+=5
