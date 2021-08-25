@@ -1,5 +1,4 @@
 from random import randint 
-global option
 condition=True
 c=0                          
 while condition:
