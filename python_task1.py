@@ -1,7 +1,7 @@
 from random import randint 
-condition=True
-c=0                          
-while condition:
+                         
+def game():
+    c=0
     score=20
     turns=10
     for i in range(1,turns+1):
@@ -14,6 +14,7 @@ while condition:
             score+=5
             print("You Won")
             print("Your Score is:",score)
+            print("-"*80)
             c=1
             break
         else:
@@ -30,10 +31,15 @@ while condition:
             if wrong_pos>0:
                 print("%d in wrong position"%(wrong_pos))
             print("Turns remaining-",turns-i)
+            print("-"*80)
     if c==1 or i==turns:
         option=input("Do you want to play again?(y/n):").lower()
-        if option=='n':
-            condition=False
+        print("-"*80)
+        if option=='y':
+            game()
+        else:
+            i=turns
+game()
             
 
             
